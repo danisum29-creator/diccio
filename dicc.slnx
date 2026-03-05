@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ejer1/ejer1.csproj" />
+  <Project Path="ejer2/ejer2.csproj" />
+  <Project Path="ejer3/ejer3.csproj" />
+  <Project Path="ejer4/ejer4.csproj" />
+</Solution>
