@@ -1,6 +1,7 @@
 ﻿Dictionary<string, string>usuarios = new Dictionary<string, string>();
 
 string clave,usuario;
+
 bool ver = true;
 int op = 0;
 
@@ -59,3 +60,4 @@ else
 {
     Console.WriteLine("el usuario que busca no existe");
 }
+
