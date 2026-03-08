@@ -1,21 +1,18 @@
 ﻿Dictionary<string , double>notas =  new Dictionary<string , double>();
 
-
-string estudiante;
-int op=0; 
-Console.WriteLine("ingrese el nombre del estudiante");
-estudiante = Console.ReadLine();
-Console.WriteLine("ingrese nota del estudiante");
+string nombre; 
 
 
+notas.Add("daniel", 70);
+notas.Add("eli ", 75);
+notas.Add("rodri", 40);
+notas.Add("shirley", 50);
+notas.Add("diana", 60);
+
+
+Console.WriteLine("ingrese un nombre");
+nombre = Console.ReadLine();
 do
 {
-    Console.WriteLine("desea ingresar otro estudiante?\n1.si\n2.no");
-    op = int.Parse(Console.ReadLine());
-    switch(op)
-    {
-        case 1:
-
-            break; 
-    }
+    Console.WriteLine("desea ingresar otro nombre?"
 }
