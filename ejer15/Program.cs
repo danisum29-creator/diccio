@@ -4,6 +4,7 @@ int codigos = 1,op=0;
 Console.WriteLine("ingrese el nombre del empleado/a");
 empleado = Console.ReadLine();
 empleados.Add(codigos, empleado);
+codigos++;
 
 do
 {
@@ -15,15 +16,21 @@ do
             Console.WriteLine("ingrese el nombre del empleado/a");
             empleado = Console.ReadLine();
             empleados.Add(codigos, empleado);
-
+            codigos++;
             break;
 
         case 2:
-            Console.WriteLine("error, opcion no valida");
+           
             break;
 
         default:
+            Console.WriteLine("error, opcion no valida");
+            break;
             break;
     }
-} while (op != 2); 
-
+} while (op != 2);
+Console.WriteLine("los empleados son: ");
+foreach (var i in empleados)
+{
+    Console.WriteLine("ID: " +i.Key + "  Nombre: " +i.Value);
+}
