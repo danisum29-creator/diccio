@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="ejer1/ejer1.csproj" />
   <Project Path="ejer10/ejer10.csproj" Id="b33c0d63-5606-49ff-9f69-bc7bf87bf04d" />
+  <Project Path="ejer11/ejer11.csproj" Id="51e57295-f68d-4407-b44b-4ae05c5308ae" />
   <Project Path="ejer2/ejer2.csproj" />
   <Project Path="ejer3/ejer3.csproj" />
   <Project Path="ejer4/ejer4.csproj" />
