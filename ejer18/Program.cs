@@ -1,11 +1,13 @@
 ﻿Dictionary<string , string> usuarios = new Dictionary<string , string>();
 int op = 0;
 string usuario,clave; 
+bool registro = false;
 Console.WriteLine("ingrese un nombre de usuario "); 
 usuario = Console.ReadLine();
 Console.WriteLine("ingrese la clave del usuario");
 clave = Console.ReadLine();
 usuarios.Add(usuario, clave);
+registro = true;
 
 do
 {
@@ -28,6 +30,7 @@ do
                 Console.WriteLine("ingrese la clave del usuario");
                 clave = Console.ReadLine();
                 usuarios.Add(usuario, clave);
+                registro = true;
             }
             break;
 
@@ -38,3 +41,9 @@ do
 
     }
 } while (op != 2);
+
+Console.WriteLine("usuarios registrados con exito: ");
+foreach(var i in usuarios)
+{
+    Console.WriteLine(i.Key);
+}
