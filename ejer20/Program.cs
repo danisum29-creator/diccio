@@ -11,7 +11,20 @@ do
     edad = int.Parse(Console.ReadLine());
     Console.WriteLine("ingrese la carrera del estudiante");
     carrera = Console.ReadLine();
-    cont++;
+    if(estudiantes.ContainsKey(carne))
+    {
+        Console.WriteLine("error, el numero de carnet no se puede repetir");
+    }
+    else
+    {
+        estudiantes.Add(carne, (nombre, edad, carrera));
+    }
+        cont++;
 } while (cont < 3);
+
+foreach(var item in estudiantes)
+{
+    Console.WriteLine("carne: " + item.Key +item.Value);
+}
 
 
